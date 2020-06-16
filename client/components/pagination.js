@@ -7,16 +7,15 @@ const Pagination = () => {
   const list = useSelector((store) => store.products.list)
   const pages = new Array(Math.ceil(list.length / 50)).fill(0).map((el, index) => index + 1)
   return (
-    <div className="pagination flex">
-      {pages.map((item) => (
-        <button
-          type="button"
-          className="mr-6 mb-10  border-2 border-solid hover:text-pink-500 text-red-500 font-bold rounded-lg border shadow-lg text-black hover:bg-gray-400  px-4 "
-          onClick={() => dispatch(sortPage(item))}
-        >
-          {item}
-        </button>
-      ))}
+    <div className="text-sm lg:flex-grow">
+      <select
+        className="p-3 rounded-lg border-solid border-2 border-gray-400 bg-white "
+        onChange={(e) => dispatch(sortPage(e.target.value))}
+      >
+        {pages.map((item) => (
+          <option value={item}>page: {item}</option>
+        ))}
+      </select>
     </div>
   )
 }

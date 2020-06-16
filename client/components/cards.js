@@ -1,10 +1,11 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import FlipMove from 'react-flip-move'
+import { VerticleButton as ScrollUpButton } from 'react-scroll-up-button'
 import { addSelection, removeSelection, searchProducts } from '../redux/reducers/products'
-import './main.scss'
-import SortProducts from './sortProducts'
 import Pagination from './pagination'
+import '../assets/scss/index.scss'
+import SortProducts from './sortProducts'
 
 const Cards = () => {
   const dispatch = useDispatch()
@@ -39,25 +40,32 @@ const Cards = () => {
   const filteredList = list.filter((el) => el.title.toLowerCase().includes(find.toLowerCase()))
   return (
     <div>
-      <div className="mt-5 mb-4">
-        <SortProducts />
-      </div>
+      <ScrollUpButton />
       <input
-        className="placeholder-grey appearance-none bg-transparent border-b-2 w-full text-gray-800 mr-3 py-1 px-2 leading-tight focus:outline-none"
+        className=" mt-2 placeholder-grey text-center appearance-none bg-transparent border-b-2 w-full text-gray-800 mr-3 py-1 px-2 leading-tight focus:outline-none"
         type="text"
         placeholder="search"
         onChange={(e) => dispatch(searchProducts(e.target.value))}
       />
-      <div className="flex flex-wrap mt-10 -mx-12 shop mb-10">
+      <div className="mt-4 flex justify-between">
+        <div>
+          <Pagination />
+        </div>
+        <div>
+          <SortProducts />
+        </div>
+      </div>
+      <div className="flex flex-wrap mt-10 -mx-12 shop mb-10  ">
         {sortBy(filteredList, sortType).map((card) => (
-          <div className="w-1/4 px-12 ">
+          <div className="w-2/4 px-12 sm:w-1/4 card ">
             <FlipMove
               staggerDelayBy={500}
               appearAnimation="accordionVertical"
               enterAnimation="fade"
               leaveAnimation="fade"
+              className="flex"
             >
-              <div className="px-5 py-4 mb-5 border-solid border-2 border-gray-200 ... ">
+              <div className="px-5 py-4 mb-5 border-solid border-b-2 border-gray-200 ...  cards ">
                 <div className="flex justify-center">
                   <img className=" h-64 w-full object-contain" src={card.image} alt="img" />
                 </div>
@@ -66,7 +74,7 @@ const Cards = () => {
                   <div>{symbols[base]}</div>
                   <div className="ml-2">{(card.price * (rates[base] || 1)).toFixed(2)}</div>
                 </div>
-                <div className="flex justify-between border-solid">
+                <div className="flex justify-between border-solid relative">
                   <button
                     type="button"
                     className="border-2 border-solid hover:text-pink-500 text-red-500 font-bold rounded-lg border shadow-lg text-black hover:bg-gray-400  px-4 "
@@ -88,7 +96,6 @@ const Cards = () => {
           </div>
         ))}
       </div>
-      <Pagination />
     </div>
   )
 }

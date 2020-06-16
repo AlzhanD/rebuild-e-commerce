@@ -1,43 +1,41 @@
 module.exports = [
   {
-    id: 'c7f6153d-5586-495c-beb2-4758bb8a6451',
-    title: 'Beer - Labatt Blue',
-    image: 'http://dummyimage.com/128x151.jpg/dddddd/000000',
-    price: 10,
-    description: 'recontextualize rich eyeballs'
-  },
-  {
     id: '89a29c32-a764-4dcb-b9fa-ca6e01b7630f',
     title: 'Beans - Fine',
-    image: 'http://dummyimage.com/140x182.jpg/ff4444/ffffff',
+    image:
+      'https://s3.amazonaws.com/greengiant-us/wp-content/uploads/2019/02/11224105/800x800_Green-Giant-Cut-Green-Beans-14.5-oz.-Can-300x300.png',
     price: 14,
     description: 'deliver end-to-end schemas'
   },
   {
     id: 'f5379176-8f74-4973-bda1-f061c5c52cd0',
     title: 'C - Plus, Orange',
-    image: 'http://dummyimage.com/100x231.jpg/dddddd/000000',
+    image:
+      'https://shop.gourmetcoffee.ca/img/product/4984_1-B.jpg?fv=C6B653CD5125B44ECE808CBAE3DCEF84-16617',
     price: 10,
     description: 'embrace B2C deliverables'
   },
   {
     id: '3d2d9453-6faa-4ec0-a8dd-ac3020bdac61',
     title: 'Pasta - Detalini, White, Fresh',
-    image: 'http://dummyimage.com/178x171.jpg/ff4444/ffffff',
+    image:
+      'https://images-na.ssl-images-amazon.com/images/I/71jt8o9n9WL._SY445_PIbundle-8,TopRight,0,0_SX296SY445SH20_.jpg',
     price: 9,
     description: 'optimize customized relationships'
   },
   {
     id: '0cff68bc-f1bc-49ce-bba8-15a2b2a46c3e',
     title: 'Cheese - Victor Et Berthold',
-    image: 'http://dummyimage.com/157x138.jpg/dddddd/000000',
+    image:
+      'https://www.ourcheeses.com/services/resizer/750/750/data/images/fromages/54e65d9696333_victor-berthold-pointe-etiquette-close.png',
     price: 15,
     description: 'target B2B solutions'
   },
   {
     id: '099e9914-f5a6-4b9a-b61f-771c8a30c7f6',
     title: 'Blue Curacao - Marie Brizard',
-    image: 'http://dummyimage.com/228x122.jpg/ff4444/ffffff',
+    image:
+      'https://lh3.googleusercontent.com/proxy/CKAf2FYDzUXAMpG9XVFzHbimqPC5FLZpVpNSYc0KQFyyNvtP7qztKwKCsPKkwhc835ttRgXOh7H9HN_7WkU2n8qkh2mwVd-ObLwwucIFtIWwGvMxsYTvc1UYYKhTqofxCirPztOPXeAXrGWnso8cFaObINVXDhRG-9ie8Y_qhm48jA',
     price: 10,
     description: 'reintermediate magnetic mindshare'
   },
@@ -170,7 +168,8 @@ module.exports = [
   {
     id: '39ff3c4f-cbb8-4c94-b295-9144067ce3d4',
     title: 'Bread - Multigrain, Loaf',
-    image: 'http://dummyimage.com/100x106.jpg/cc0000/ffffff',
+    image:
+      'https://images.fineartamerica.com/images-medium-large-5/loaf-of-multigrain-bread-elena-elisseeva.jpg',
     price: 7,
     description: 'strategize turn-key mindshare'
   },
@@ -191,7 +190,7 @@ module.exports = [
   {
     id: 'da407587-1a67-406d-a4ba-996f73a68701',
     title: 'Beer - Labatt Blue',
-    image: 'http://dummyimage.com/123x174.jpg/5fa2dd/ffffff',
+    image: 'https://dydza6t6xitx6.cloudfront.net/ci-labatt-blue-166b3625536163c9.png',
     price: 7,
     description: 'architect collaborative schemas'
   },
@@ -261,7 +260,7 @@ module.exports = [
   {
     id: 'bed2dcab-6c14-42be-96a1-9cdfccee40d8',
     title: 'Beef - Texas Style Burger',
-    image: 'http://dummyimage.com/180x129.jpg/5fa2dd/ffffff',
+    image: 'https://assets.kraftfoods.com/recipe_images/TexasStyle_Burgers.jpg',
     price: 12,
     description: 'morph innovative markets'
   },
@@ -289,7 +288,8 @@ module.exports = [
   {
     id: '6fb7bf24-78e1-4b5c-836a-4aeaccf5ce50',
     title: 'Chicken - Livers',
-    image: 'http://dummyimage.com/196x212.jpg/dddddd/000000',
+    image:
+      'https://previews.123rf.com/images/pioneer111/pioneer1111210/pioneer111121000034/15844295-fresh-raw-chicken-liver-on-white.jpg',
     price: 5,
     description: 'extend cross-platform technologies'
   },

@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { Route } from 'react-router-dom'
 import Header from './header1'
-import { getLogs, getProducts, getRates } from '../redux/reducers/products'
+import { getProducts, getRates } from '../redux/reducers/products'
 import Main from './main'
 import Basket from './basket'
 import Logs from './logs'
@@ -12,7 +12,6 @@ const Home = () => {
   useEffect(() => {
     dispatch(getProducts())
     dispatch(getRates())
-    dispatch(getLogs())
   }, [dispatch])
 
   return (

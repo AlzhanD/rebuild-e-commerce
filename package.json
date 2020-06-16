@@ -116,6 +116,7 @@
     "react-redux": "^7.2.0",
     "react-refresh": "^0.8.3",
     "react-router-dom": "^5.2.0",
+    "react-scroll-up-button": "^1.6.4",
     "react-shadow-scroll": "^2.0.0",
     "react-transition-group": "^4.4.1",
     "redux": "^4.0.5",

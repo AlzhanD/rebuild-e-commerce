@@ -1,44 +1,22 @@
 [
   {
-    "type": "ADD_TO_SELECTION",
-    "id": "89a29c32-a764-4dcb-b9fa-ca6e01b7630f"
+    "type": "GET_LOGS",
+    "logs": [],
+    "time": "2020-06-16T22:10:21.875Z"
   },
   {
-    "time": "2020-06-15T18:49:59.909Z"
+    "type": "SET_BASE",
+    "base": "CAD",
+    "time": "2020-06-16T22:10:48.037Z"
   },
   {
-    "type": "ADD_TO_SELECTION",
-    "id": "bed2dcab-6c14-42be-96a1-9cdfccee40d8"
+    "type": "SET_BASE",
+    "base": "EUR",
+    "time": "2020-06-16T22:10:48.369Z"
   },
   {
-    "time": "2020-06-15T18:50:00.425Z"
-  },
-  {
-    "type": "ADD_TO_SELECTION",
-    "id": "c7f6153d-5586-495c-beb2-4758bb8a6451"
-  },
-  {
-    "time": "2020-06-15T18:50:00.930Z"
-  },
-  {
-    "type": "ADD_TO_SELECTION",
-    "id": "c7f6153d-5586-495c-beb2-4758bb8a6451"
-  },
-  {
-    "time": "2020-06-15T18:50:01.066Z"
-  },
-  {
-    "type": "ADD_TO_SELECTION",
-    "id": "da407587-1a67-406d-a4ba-996f73a68701"
-  },
-  {
-    "time": "2020-06-15T18:50:01.545Z"
-  },
-  {
-    "type": "ADD_TO_SELECTION",
-    "id": "da407587-1a67-406d-a4ba-996f73a68701"
-  },
-  {
-    "time": "2020-06-15T18:50:01.753Z"
+    "type": "SET_BASE",
+    "base": "USD",
+    "time": "2020-06-16T22:10:48.702Z"
   }
 ]

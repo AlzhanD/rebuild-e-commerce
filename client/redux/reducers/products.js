@@ -1,5 +1,3 @@
-import axios from 'axios'
-
 const ADD_TO_SELECTION = 'ADD_TO_SELECTION'
 const REMOVE_FROM_SECTION = 'REMOVE_FROM_SECTION'
 const UPDATE_SORT_TYPE = 'UPDATE_SORT_TYPE'
@@ -7,8 +5,7 @@ const GET_PRODUCTS = '@@GET_PRODUCTS'
 const GET_RATES = '@@GET_RATES'
 const SET_BASE = 'SET_BASE'
 const SET_CURRENT_PAGE = 'SET_CURRENT_PAGE'
-const GET_LOGS = '@@GET_LOGS'
-const SET_SEARCH = 'SET_SEARCH'
+const SET_SEARCH = '@@SET_SEARCH'
 const initialState = {
   list: [],
   selection: {},
@@ -16,7 +13,6 @@ const initialState = {
   base: 'EUR',
   sortType: 'a-z',
   currentPage: 1,
-  logs: [],
   find: ''
 }
 
@@ -27,9 +23,6 @@ export default (state = initialState, action) => {
     }
     case GET_RATES: {
       return { ...state, rates: action.rates.rates }
-    }
-    case GET_LOGS: {
-      return { ...state, logs: action.logs }
     }
     case SET_SEARCH: {
       return { ...state, find: action.find }
@@ -104,12 +97,6 @@ export function getProducts() {
       .then((list) => {
         dispatch({ type: GET_PRODUCTS, list })
       })
-  }
-}
-
-export function getLogs() {
-  return (dispatch) => {
-    axios('/api/v1/logs').then(({ data }) => dispatch({ type: GET_LOGS, logs: data }))
   }
 }
 

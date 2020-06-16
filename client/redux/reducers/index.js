@@ -1,13 +1,13 @@
 import { combineReducers } from 'redux'
 import { connectRouter } from 'connected-react-router'
 import products from './products'
-import logs from './logs'
+import logsItem from './logs'
 
 const createRootReducer = (history) =>
   combineReducers({
     router: connectRouter(history),
     products,
-    logs
+    logsItem
   })
 
 export default createRootReducer

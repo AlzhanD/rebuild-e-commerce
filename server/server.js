@@ -60,8 +60,10 @@ const rFile = () => {
 server.post('/api/v1/logs', async (req, res) => {
   const logs = await rFile()
   const newLogs = req.body
-  const updateLogs = [...logs, newLogs, { time: new Date() }]
+  const updateLogs = [...logs, { ...newLogs, time: new Date() }]
   await wrFile(updateLogs)
+  // eslint-disable-next-line no-console
+  console.log(req.body)
   res.json({ update: 'successfully' })
 })
 
