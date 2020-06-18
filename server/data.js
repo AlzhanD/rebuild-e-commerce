@@ -34,8 +34,7 @@ module.exports = [
   {
     id: '099e9914-f5a6-4b9a-b61f-771c8a30c7f6',
     title: 'Blue Curacao - Marie Brizard',
-    image:
-      'https://lh3.googleusercontent.com/proxy/CKAf2FYDzUXAMpG9XVFzHbimqPC5FLZpVpNSYc0KQFyyNvtP7qztKwKCsPKkwhc835ttRgXOh7H9HN_7WkU2n8qkh2mwVd-ObLwwucIFtIWwGvMxsYTvc1UYYKhTqofxCirPztOPXeAXrGWnso8cFaObINVXDhRG-9ie8Y_qhm48jA',
+    image: 'https://www.efsco.net/content/images/thumbs/0009392_marie-brizard-blue-curacao-1l.jpeg',
     price: 10,
     description: 'reintermediate magnetic mindshare'
   },

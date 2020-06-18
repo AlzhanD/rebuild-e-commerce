@@ -5,6 +5,7 @@ import { setBase } from '../redux/reducers/products'
 
 const Header = () => {
   const selection = useSelector((store) => store.products.selection)
+  const base = useSelector((store) => store.products.base)
   const totalQuantity = Object.keys(selection).reduce((acc, rec) => {
     return acc + selection[rec]
   }, 0)
@@ -29,7 +30,7 @@ const Header = () => {
             <button
               type="button"
               className="hover:bg-gray-200 text-gray-800 font-bold py-2 px-4 rounded ml-2 outline-none"
-              onClick={() => dispatch(setBase(el))}
+              onClick={() => dispatch(setBase(el, base))}
             >
               {el}
             </button>

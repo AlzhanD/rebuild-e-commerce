@@ -59,15 +59,59 @@ const rFile = () => {
 }
 server.post('/api/v1/logs', async (req, res) => {
   const logs = await rFile()
-  const newLogs = req.body
-  const updateLogs = [...logs, { ...newLogs, time: new Date() }]
-  await wrFile(updateLogs)
-  // eslint-disable-next-line no-console
-  console.log(req.body)
+  const action = req.body
+  let updatedLogs = []
+  if (action.type === 'ADD_TO_SELECTION') {
+    updatedLogs = [
+      ...logs,
+      {
+        time: new Date(),
+        event: `add ${data.find((el) => el.id === action.id).title} to the basket`
+      }
+    ]
+  }
+  if (action.type === 'REMOVE_FROM_SECTION') {
+    updatedLogs = [
+      ...logs,
+      {
+        time: new Date(),
+        event: `removed ${data.find((el) => el.id === action.id).title} from the basket`
+      }
+    ]
+  }
+  if (action.type === 'SET_BASE') {
+    updatedLogs = [
+      ...logs,
+      {
+        time: new Date(),
+        event: `change currency from ${action.oldBase} to ${action.base}`
+      }
+    ]
+  }
+  if (action.type === 'UPDATE_SORT_TYPE') {
+    updatedLogs = [
+      ...logs,
+      {
+        time: new Date(),
+        event: `sort by ${action.sortType}`
+      }
+    ]
+  }
+  if (action.type === 'SET_CURRENT_PAGE') {
+    updatedLogs = [
+      ...logs,
+      {
+        time: new Date(),
+        event: `page number ${action.currentPage}`
+      }
+    ]
+  }
+
+  await wrFile(updatedLogs)
   res.json({ update: 'successfully' })
 })
 
-server.get('/api/v1/products', (req, res) => {
+server.get('/api/v1/products', async (req, res) => {
   res.json(data)
 })
 server.get('/api/v1/rates', async (req, res) => {
@@ -76,7 +120,7 @@ server.get('/api/v1/rates', async (req, res) => {
 })
 
 server.get('/api/v1/logs', async (req, res) => {
-  const logs = await rFile('logs')
+  const logs = await rFile()
   res.json(logs)
 })
 

@@ -13,7 +13,8 @@ const initialState = {
   base: 'EUR',
   sortType: 'a-z',
   currentPage: 1,
-  find: ''
+  find: '',
+  oldBase: ''
 }
 
 export default (state = initialState, action) => {
@@ -31,7 +32,7 @@ export default (state = initialState, action) => {
       return { ...state, currentPage: action.Page }
     }
     case SET_BASE: {
-      return { ...state, base: action.base }
+      return { ...state, base: action.base, oldBase: action.oldBase }
     }
     case UPDATE_SORT_TYPE: {
       return { ...state, sortType: action.sortType }
@@ -86,8 +87,8 @@ export function removeSelection(id) {
   return { type: REMOVE_FROM_SECTION, id }
 }
 
-export function setBase(base) {
-  return { type: SET_BASE, base }
+export function setBase(base, oldBase) {
+  return { type: SET_BASE, base, oldBase }
 }
 
 export function getProducts() {

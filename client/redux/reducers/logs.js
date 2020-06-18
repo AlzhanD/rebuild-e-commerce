@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const GET_LOGS = 'GET_LOGS'
+const GET_LOGS = '@@GET_LOGS'
 
 const initialState = {
   list: [],
@@ -17,8 +17,7 @@ export default (state = initialState, action) => {
     }
     default:
       return {
-        ...state,
-        list: [...state.list, action]
+        ...state
       }
   }
 }
