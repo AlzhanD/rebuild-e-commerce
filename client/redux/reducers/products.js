@@ -13,8 +13,7 @@ const initialState = {
   base: 'EUR',
   sortType: 'a-z',
   currentPage: 1,
-  find: '',
-  oldBase: ''
+  find: ''
 }
 
 export default (state = initialState, action) => {
@@ -32,7 +31,7 @@ export default (state = initialState, action) => {
       return { ...state, currentPage: action.Page }
     }
     case SET_BASE: {
-      return { ...state, base: action.base, oldBase: action.oldBase }
+      return { ...state, base: action.base }
     }
     case UPDATE_SORT_TYPE: {
       return { ...state, sortType: action.sortType }

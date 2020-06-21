@@ -18,10 +18,9 @@ const Logs = () => {
             <th className="w-1/4 px-4 py-2">Time</th>
           </tr>
         </thead>
-
         <tbody>
           {logs.map((el) => (
-            <tr className="bg-gray-100">
+            <tr key={el.time} className="bg-gray-100">
               <td className="border px-4 py-2">{el.event}</td>
               <td className="border px-4 py-2">{el.time}</td>
             </tr>

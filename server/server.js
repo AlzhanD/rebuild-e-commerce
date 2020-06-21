@@ -66,7 +66,7 @@ server.post('/api/v1/logs', async (req, res) => {
       ...logs,
       {
         time: new Date(),
-        event: `add ${data.find((el) => el.id === action.id).title} to the basket`
+        event: `added ${data.find((el) => el.id === action.id).title} to the basket`
       }
     ]
   }
@@ -114,6 +114,7 @@ server.post('/api/v1/logs', async (req, res) => {
 server.get('/api/v1/products', async (req, res) => {
   res.json(data)
 })
+
 server.get('/api/v1/rates', async (req, res) => {
   const { data: rates } = await axios('https://api.exchangeratesapi.io/latest?symbols=USD,CAD')
   res.json(rates)

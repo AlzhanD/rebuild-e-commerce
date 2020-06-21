@@ -57,7 +57,7 @@ const Cards = () => {
       </div>
       <div className="flex flex-wrap mt-10 -mx-12 shop mb-10  ">
         {sortBy(filteredList, sortType).map((card) => (
-          <div className="w-2/4 px-12 sm:w-1/4 card ">
+          <div key={card.id} className="w-2/4 px-12 sm:w-1/4 card ">
             <FlipMove
               staggerDelayBy={500}
               appearAnimation="accordionVertical"
@@ -80,7 +80,7 @@ const Cards = () => {
                     className="border-2 border-solid hover:text-pink-500 text-red-500 font-bold rounded-lg border shadow-lg text-black hover:bg-gray-400  px-4 "
                     onClick={() => dispatch(removeSelection(card.id))}
                   >
-                    -
+                    <i className="fas fa-cart-plus">-</i>
                   </button>
                   <span className="px-5">{selection[card.id] || 0}</span>
                   <button
@@ -88,7 +88,7 @@ const Cards = () => {
                     className="border-2 border-solid hover:text-pink-500 text-red-500 font-bold rounded-lg border shadow-lg text-black hover:bg-gray-400  px-4 "
                     onClick={() => dispatch(addSelection(card.id))}
                   >
-                    +
+                    <i className="fas fa-cart-plus">+</i>
                   </button>
                 </div>
               </div>
