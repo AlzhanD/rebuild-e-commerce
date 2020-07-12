@@ -2,5 +2,65 @@
   {
     "time": "2020-07-12T16:41:36.875Z",
     "event": "page number undefined"
+  },
+  {
+    "time": "2020-07-12T16:50:46.318Z",
+    "event": "added Beef - Texas Style Burger to the basket"
+  },
+  {
+    "time": "2020-07-12T16:50:46.439Z",
+    "event": "added Beef - Texas Style Burger to the basket"
+  },
+  {
+    "time": "2020-07-12T16:50:46.621Z",
+    "event": "added Beef - Texas Style Burger to the basket"
+  },
+  {
+    "time": "2020-07-12T16:50:47.533Z",
+    "event": "added Beer - Labatt Blue to the basket"
+  },
+  {
+    "time": "2020-07-12T16:50:47.667Z",
+    "event": "added Beer - Labatt Blue to the basket"
+  },
+  {
+    "time": "2020-07-12T16:50:47.845Z",
+    "event": "added Beer - Labatt Blue to the basket"
+  },
+  {
+    "time": "2020-07-12T16:50:49.236Z",
+    "event": "added Blue Curacao - Marie Brizard to the basket"
+  },
+  {
+    "time": "2020-07-12T16:50:49.370Z",
+    "event": "added Blue Curacao - Marie Brizard to the basket"
+  },
+  {
+    "time": "2020-07-12T16:50:50.953Z",
+    "event": "added Beans - Fine to the basket"
+  },
+  {
+    "time": "2020-07-12T16:50:51.072Z",
+    "event": "added Beans - Fine to the basket"
+  },
+  {
+    "time": "2020-07-12T16:50:51.248Z",
+    "event": "added Beans - Fine to the basket"
+  },
+  {
+    "time": "2020-07-12T16:50:54.427Z",
+    "event": "change currency from EUR to EUR"
+  },
+  {
+    "time": "2020-07-12T16:50:55.331Z",
+    "event": "change currency from EUR to CAD"
+  },
+  {
+    "time": "2020-07-12T16:50:56.327Z",
+    "event": "change currency from CAD to USD"
+  },
+  {
+    "time": "2020-07-12T16:51:00.804Z",
+    "event": "sort by lowToHigh"
   }
 ]

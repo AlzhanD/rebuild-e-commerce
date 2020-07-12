@@ -4,7 +4,6 @@ import FlipMove from 'react-flip-move'
 import { VerticleButton as ScrollUpButton } from 'react-scroll-up-button'
 import { addSelection, removeSelection, searchProducts } from '../redux/reducers/products'
 import Pagination from './pagination'
-import '../assets/scss/index.scss'
 import SortProducts from './sortProducts'
 
 const Cards = () => {
