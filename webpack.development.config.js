@@ -62,7 +62,7 @@ const config = {
           {
             loader: 'eslint-loader',
             options: {
-              cache: false,
+              cache: true,
 
               cacheIdentifer: eslintCacheIdentifier
             }
